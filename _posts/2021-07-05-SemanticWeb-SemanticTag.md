@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "사이트에 이미지를 넣는 두 가지 방법과 활용의 차이"
+title: "사이트에 이미지를 넣는 두 가지 방법과 그 활용의 차이"
 description: "Semantic Web과 Semantic Tag의 이해"
 tags: [CSS]
 comments: true
