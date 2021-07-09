@@ -13,4 +13,4 @@ typora-root-url: ../assets/images
 
 
 
-![chrome](/chrome.png)
+![chrome](../assets/images/chrome.png)
