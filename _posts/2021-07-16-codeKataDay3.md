@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CODEKATA Day 3 - Leetscode 9번 문제풀이"
+title: "CODEKATA Day 3 - Leetscode 9번, 13번 문제풀이"
 description: "Leetscode 9번 문제풀이"
 tags: [CODEKATA]
 comments: true
