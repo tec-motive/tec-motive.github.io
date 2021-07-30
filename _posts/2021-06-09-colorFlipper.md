@@ -6,6 +6,9 @@ tags: [Javascript]
 comments: true
 published: true
 categories: Javascript
+sitemap:
+  changefreq: daily
+  priority: 1.0
 ---
 
 오늘은 자바 스크립트를 이용해 배경의 색상을 바꾸는 버튼을 만들어 보려고 합니다.
@@ -20,15 +23,9 @@ categories: Javascript
 
 그럼 본격적으로 시작해보겠습니다.
 
-
-
 ### 1. 프로젝트 결과물
 
-
-
 결과물 링크 : https://tec-motive.github.io/doyun-home/project01/hexColorFlipper/index_hexColorFlipper.html
-
-
 
 링크가 결과물의 모습입니다.
 
@@ -38,35 +35,31 @@ categories: Javascript
 
 제작자의 결과물 및 세팅 자료도 영상을 통해 찾아보실 수 있습니다.
 
-
-
 그럼 먼저 HTML 구조를 빠르게 확인하고 넘어가겠습니다.
 
 ### 2. HTML 구조
 
 ```html
 <body>
-    <nav>
-      <div class="nav-center">
-        <h4>color flipper</h4>
-        <ul class="nav-links">
-          <li><a href="index.html">simple</a></li>
-          <li><a href="hex.html">hex</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <div class="container">
-        <h2>background color : <span class="color">#f1f5f8</span></h2>
-        <button class="btn btn-hero" id="btn">click me</button>
-      </div>
-    </main>
-    <!-- javascript -->
-    <script src="app.js"></script>
- </body>
+  <nav>
+    <div class="nav-center">
+      <h4>color flipper</h4>
+      <ul class="nav-links">
+        <li><a href="index.html">simple</a></li>
+        <li><a href="hex.html">hex</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <h2>background color : <span class="color">#f1f5f8</span></h2>
+      <button class="btn btn-hero" id="btn">click me</button>
+    </div>
+  </main>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
 ```
-
-
 
 먼저 index.html의 body입니다.
 
@@ -84,11 +77,9 @@ categories: Javascript
 
 그럼 HTML은 이만 줄이고 자바스크립트로 넘어가겠습니다.
 
-
-
 ### 3. Javascript 적용
 
-먼저 우리가 만들어볼 배경 전환은 simple 버젼입니다. 
+먼저 우리가 만들어볼 배경 전환은 simple 버젼입니다.
 
 즉, 정해진 4개의 색상으로만 전환이 가능한 구조를 만드는 것이죠.
 
@@ -98,15 +89,15 @@ HTML하단에 추가한 app.js를 통해 HTML을 자바스크립트로 제어할
 
 그럼 제어를 위해 app.js를 하나 하나 살펴보겠습니다.
 
-자바스크립트의 가장 단순한 구조는 
+자바스크립트의 가장 단순한 구조는
 
 - Selectors
 - Event Listners
 - Functions
 
-로 3등분된 구조입니다. 
+로 3등분된 구조입니다.
 
-이번 프로젝트 역시 이 구조를 가지고 있죠. 
+이번 프로젝트 역시 이 구조를 가지고 있죠.
 
 먼저, selector 부터 살펴보겠습니다.
 
@@ -132,11 +123,9 @@ btn은 document.getElementById("btn")을 이용해서 html의 id = "btn"의 값�
 
 다음인 color는 document.querySelector를 통해서 class값이 color가 할당된 요소를 가져옵니다.
 
-여기서 querySelector는 특정한 값의 지정자(selector)를 가지는 document의 첫번째 요소를 가져옵니다. 
+여기서 querySelector는 특정한 값의 지정자(selector)를 가지는 document의 첫번째 요소를 가져옵니다.
 
 즉 다수의 요소가 document내에 있더라도 첫번째 값을 가져오는 것이죠.
-
-
 
 #### 3-2. Event Listener
 
@@ -148,7 +137,7 @@ btn.addEventListener("click", function () {
 });
 ```
 
-다음은 Event Listener입니다. 
+다음은 Event Listener입니다.
 
 이 프로젝트에는 버튼 이외에 효과가 없기 때문에 버튼의 'click'에 반응하는 eventListener만 추가해줬습니다.
 
@@ -166,8 +155,6 @@ getRandomNumber()는 무작위 숫자를 구하는 함수인데, 마지막 파�
 
 이로써 버튼의 eventListener가 마무리됩니다.
 
-
-
 #### 3-3 function
 
 ```javascript
@@ -178,19 +165,15 @@ function getRandomNumber() {
 
 마지막으로 함수인데요 프로젝트가 단순해서 함수 역시 1개만 선언합니다.
 
-앞서 살펴본 getRandomNumber() 함수입니다. 
+앞서 살펴본 getRandomNumber() 함수입니다.
 
 단순하게 return값에 math.random 함수를 이용해 0-1까지 임의의 수를 출력하고, 이를 color의 리스트 개수에 곱해 0-3까지의 숫자가 출력되도록 합니다.
 
 여기에 math.floor를 통해 소수점을 제거해서 0,1,2,3 중 하나의 수 즉, 리스트 값 4개 중 하나를 무작위로 선택할 숫자가 세팅되는 것이죠.
 
-
-
 ### 4. Hex 무작위 출력 버젼
 
 Hex 무작위 출력버젼의 경우 Html은 링크만 차이날 뿐 전반적인 형식은 동일하기 때문에 javascript만 살펴보겠습니다.
-
-
 
 ```javascript
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
@@ -222,8 +205,6 @@ function getRandomNumber() {
 
 이렇게 2가지 입니다.
 
-
-
 둘을 나눠서 살펴보죠.
 
 ```
@@ -251,7 +232,7 @@ btn.addEventListener("click", function () {
 
 즉 위에 보이는 hexColor는 '#'만 초기선언으로 존재하고 나머지 값은 hex 변수의 0-15 번째 요소중 하나씩 임의로 배정되는 것이죠.
 
-이 때문에 #뒤로 요소가 하나 하나 추가되어야 합니다. 
+이 때문에 #뒤로 요소가 하나 하나 추가되어야 합니다.
 
 그러므로 할당 후 수정이 불가능한 const가 아니라 let을 선언해줍니다.
 
@@ -259,12 +240,8 @@ btn.addEventListener("click", function () {
 
 이 두 부분을 제외한 것은 모두 동일하기 때문에 이것만 주의하면 충분합니다.
 
-
-
 이렇게 배경화면 바꾸기 버튼은 마무리 짓도록 하겠습니다.
 
 다음 프로젝트로 금방 돌아오겠습니다.
 
-
-
-감사합니다. 
+감사합니다.
