@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CODEKATA Day 1 - Leetscode - 1927, 1920, 1480"
+title: "CODEKATA Day 1 [JS] - Leetcode - 1927, 1920, 1480"
 description: "Leetscode 1929, 1920, 1480번 문제풀이"
 tags: [CODEKATA]
 comments: true

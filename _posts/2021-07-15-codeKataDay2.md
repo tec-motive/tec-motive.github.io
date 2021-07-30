@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CODEKATA Day 2 - Leetscode - 1108, 1, 7"
+title: "CODEKATA Day 2 [JS] - Leetcode - 1108, 1, 7"
 description: "Leetscode 1929, 1920, 1480번 문제풀이"
 tags: [CODEKATA]
 comments: true

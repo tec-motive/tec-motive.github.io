@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CODEKATA Day 4 - Leetscode 3번 문제풀이"
+title: "CODEKATA Day 4 [JS] - Leetcode 3번 문제풀이"
 description: "Leetscode 3번 문제풀이"
 tags: [CODEKATA]
 comments: true

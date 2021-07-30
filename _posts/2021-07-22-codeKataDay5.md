@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "CODEKATA Day 5 - Leetscode 14번 문제풀이"
+title: "CODEKATA Day 5 [JS] - Leetcode 14번 문제풀이"
 description: "Leetscode 3번 문제풀이"
 tags: [CODEKATA]
 comments: true
@@ -74,7 +74,7 @@ const sameReverse = num => {
 
 
 
-###  LeetsCode 14. Longest Common Prefix
+###  LeetCode 14. Longest Common Prefix
 
 ##### 문제
 
