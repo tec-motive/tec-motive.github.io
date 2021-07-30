@@ -16,6 +16,14 @@ $doc-font-size: 16 !default;
   font-style: normal, bold;
 }
 
+@font-face {
+  font-family: "KOTRA_BOLD-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
@@ -38,7 +46,7 @@ $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
 $global-font-family: "MaruBuri-Regular", $sans-serif !default;
-$header-font-family: "MaruBuri-Regular", $sans-serif !default;
+$header-font-family: "KOTRA_BOLD-Bold", $sans-serif !default;
 $caption-font-family: "MaruBuri-Regular", $serif !default;
 
 /* type scale */
