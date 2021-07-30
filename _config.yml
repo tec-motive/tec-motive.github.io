@@ -96,14 +96,14 @@ analytics:
 # Site Author
 author:
   name: "Doyun-Hwang"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/avatar.png"
   bio: "Happy Coder"
   location: "Suwon, South-Korea"
   email:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "materokatti@gmail.com"
+      # url: "materokatti@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://doyun.ga/"
