@@ -17,8 +17,8 @@ $doc-font-size: 16 !default;
 }
 
 @font-face {
-  font-family: "KOTRA_BOLD-Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff")
+  font-family: "EliceDigitalBaeum_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
@@ -46,7 +46,7 @@ $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
 $global-font-family: "MaruBuri-Regular", $sans-serif !default;
-$header-font-family: "KOTRA_BOLD-Bold", $sans-serif !default;
+$header-font-family: "EliceDigitalBaeum_Bold", $sans-serif !default;
 $caption-font-family: "MaruBuri-Regular", $serif !default;
 
 /* type scale */
