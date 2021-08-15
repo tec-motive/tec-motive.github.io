@@ -2,10 +2,10 @@
 layout: single
 title: "스포츠와 개발 문화의 공통점 - 위코드 1달을 마무리하며"
 description: "위코드 한 달의 복기"
-tags: [WECODE]
+tags: [AboutMe]
 comments: true
 published: true
-categories: WECODE
+categories: AboutMe
 typora-root-url: ../assets/images
 sitemap:
   changefreq: daily
