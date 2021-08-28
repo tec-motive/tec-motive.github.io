@@ -40,7 +40,7 @@ sitemap:
 #### Rebase 명령어
 
 ```
-git rebase -1 main
+git rebase -i main
 ```
 
 가장 많이 사용될 rebase 명령어로 커밋을 줄이거나 master branch 내용을 merge 할 때 사용된다.
